@@ -1,0 +1,17 @@
+#include <PID_v1.h>
+
+int led = 11; // on introduit les variables
+int phot = 0; // introduit la variable qui va receuillir la valeur de la photorésistance
+int Val_led = 0; // introduit la variable qui permettra d'envoyer le bon rapport cyclique à la LED
+
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode (led, OUTPUT); // on déclare la LED en sortie
+  Serial.begin(9600);
+}
+// On créé une boucle
+void loop() { 
+  phot = analogRead(A0); // on lit la valeur A0
+  Serial.println(phot); // on affiche dans le moniteur
+}
