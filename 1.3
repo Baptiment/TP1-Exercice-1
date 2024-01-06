@@ -1,0 +1,22 @@
+int led = 11; // on introduit les variables
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode (led, OUTPUT); // on déclare la LED en sortie
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite (led, LOW); // la LED commence éteinte
+  delay(1000); // attente de 1 seconde
+  analogWrite (led, 64); // la LED s'allume à 25% de son intensité 
+  delay(1000);
+  digitalWrite (led, LOW); // La LED s'éteint
+  delay(1000);
+  analogWrite (led, 191); // la LED s'allume à 75% de son intensité
+  delay(1000);
+  digitalWrite (led, LOW); // la led s'eteint
+  delay(1000);
+  analogWrite (led, 255); // la LED s'allume à 100% de son intensité
+  delay(1000);
