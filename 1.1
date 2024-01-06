@@ -1,0 +1,16 @@
+int led = 13; // on introduit les variables d'entrée
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode (led, OUTPUT); // la LED est déclarée en sortie
+
+}
+
+void loop() { // début de la boucle
+  // put your main code here, to run repeatedly:
+  digitalWrite (led, HIGH); // la LED s'allume
+  delay(1000); // attente de 1 seconde
+  digitalWrite (led, LOW); // la LED s'éteint
+  delay(1000); // attente de 1 seconde
+
+}
